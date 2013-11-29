@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<!--  nastavimo enkodiranje (zaradi podpore brskalnikov) -->
+		<meta charset="utf-8">
+		<!-- Naslov -->
+		<title>PIPromotor</title>
+			<link rel="stylesheet" type="text/css" href="css/style.css" />
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+			<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+			<link href="../assets/ico/apple-touch-icon-144-precomposed.png" sizes="144x144" rel="apple-touch-icon-precomposed">
+			<link href="../assets/ico/apple-touch-icon-114-precomposed.png" sizes="114x114" rel="apple-touch-icon-precomposed">
+			<link href="../assets/ico/apple-touch-icon-72-precomposed.png" sizes="72x72" rel="apple-touch-icon-precomposed">
+			<link href="../assets/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+			
+			<link rel="shortcut icon" href="favcon.ico">
+			</head>
+<body class="login">
+	<div id="login" >
+				<h1>
+					<a href="http://www.doma.cime.si" title:"Powered by Raspberry PI"> </a>
+				</h1>
+				<form name="longin" id="longin" action="login.php" class="login" method="post">
+				
+					<p>
+						<label for="user_login">Username</br>
+						<input type="text" name="myusername" id="myusername" class="input" value size="20"><br></label>
+					</p>
+						
+						
+					<p>
+						<label for="user_pass">Password</br>
+						<input type="password" name="mypassword" id="mypassword" class="input" value size="20"><br></label>
+					</p>
+						
+					<p class="forgetmenot"> 
+						<label for="user_login"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label>
+					</p>
+					
+					<p class="submit"> 
+						<input id="wp-submit" class="button button-primary button-large"; type="submit" value="Log In">
+						<input type="hidden" name="redirect_to" value="home.php">
+						<input type="hidden" name="testcookie" value="1">
+					</p>
+				</form>
+				<p id="nav";><a href="lostpassword.php" title="Password Lost and Found">Lost your password?</a></p>
+
+	</div>
+
+
+				<!-- Javascript se naloži na koncu. TO KODO SEM KOPIRAL S TUJEGA VIRA (http://twitter.github.io/bootstrap/getting-started.html) -->
+				<script src="js/jQuery.js"></script>
+				<!-- tranzicija ob odpiranju članka -->
+				<script src="js/bootstrap-transition.js"></script>
+				<!-- javascript modal - okna -->
+				<script src="js/bootstrap-modal.js"></script>
+				<script src="js/bootstrap-dropdown.js"></script>
+				<!-- Javascript gumbi -->
+				<script src="js/bootstrap-button.js"></script>
+				<script src="js/bootstrap-collapse.js"></script>
+				<script src="js/smooth-scroll.js"></script>
+</body>
+</html>
